@@ -12,12 +12,12 @@ class _Screen1State extends State<Screen1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 68, 192, 197),
+      backgroundColor: Color(0xff424549),
       body: Container(
         child: ListView(
           children: [
             Divider(
-              color: Color(0xff0ce4fb),
+              color: Color(0xff9cace5),
               height: 200,
               thickness: 7.0,
               endIndent: 290.0,
@@ -43,7 +43,7 @@ class _Screen1State extends State<Screen1> {
                 Navigator.pushNamed(context, "opciones_semanales");
               },
               child: BotonWidget(
-                color: Color(0xff79c662),
+                color: Color(0xff7289da),
                 texto: 'Semanal',
                 colorLetra: Colors.white,
               ),
@@ -52,12 +52,12 @@ class _Screen1State extends State<Screen1> {
               height: 20.0,
             ),
             BotonWidget(
-              color: Color(0xff79c662),
-              texto: 'Quincenal',
+              color: Color(0xff7289da),
+              texto: 'Mensual',
               colorLetra: Colors.white,
             ),
             Divider(
-              color: Color(0xff0ce4fb),
+              color: Color(0xff9cace5),
               height: 200,
               thickness: 7.0,
               indent: 290.0,

@@ -19,7 +19,7 @@ class _TablaComisionesState extends State<TablaComisiones> {
         child: ListView(
           children: [
             Divider(
-              color: Color(0xff0ce4fb),
+              color: Color(0xff9cace5),
               height: 70,
               thickness: 7.0,
               endIndent: 290.0,
@@ -30,7 +30,7 @@ class _TablaComisionesState extends State<TablaComisiones> {
               child: Text(
                 'Selecciona el número para recibir tu tanda',
                 style: TextStyle(
-                  color: Color.fromARGB(255, 68, 192, 197),
+                  color: Color(0xff4c5d77),
                   fontWeight: FontWeight.w700,
                   fontSize: 25.0,
                 ),
@@ -47,7 +47,7 @@ class _TablaComisionesState extends State<TablaComisiones> {
                   Text(
                     'Nro',
                     style: TextStyle(
-                      color: Colors.black,
+                      color: Color(0xff424549),
                       fontWeight: FontWeight.w700,
                       fontSize: 15.0,
                     ),
@@ -56,7 +56,7 @@ class _TablaComisionesState extends State<TablaComisiones> {
                   Text(
                     'Tanda Semanal',
                     style: TextStyle(
-                      color: Colors.black,
+                      color: Color(0xff424549),
                       fontWeight: FontWeight.w700,
                       fontSize: 15.0,
                     ),
@@ -65,7 +65,7 @@ class _TablaComisionesState extends State<TablaComisiones> {
                   Text(
                     'Comisión',
                     style: TextStyle(
-                      color: Colors.black,
+                      color: Color(0xff424549),
                       fontWeight: FontWeight.w700,
                       fontSize: 15.0,
                     ),
@@ -74,7 +74,7 @@ class _TablaComisionesState extends State<TablaComisiones> {
                   Text(
                     'Monto que recibes',
                     style: TextStyle(
-                      color: Colors.black,
+                      color: Color(0xff424549),
                       fontWeight: FontWeight.w700,
                       fontSize: 15.0,
                     ),
@@ -85,7 +85,7 @@ class _TablaComisionesState extends State<TablaComisiones> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: Divider(
-                color: Colors.green,
+                color: Color(0xff9cace5),
                 thickness: 2.0,
               ),
             ),
@@ -102,12 +102,12 @@ class _TablaComisionesState extends State<TablaComisiones> {
                       children: [
                         Icon(
                           Icons.arrow_back_ios_rounded,
-                          color: Color(0xff29f3e2),
+                          color: Color(0xff4c5d77),
                         ),
                         Text(
                           'Volver',
                           style: TextStyle(
-                            color: Color(0xff29f3e2),
+                            color: Color(0xff4c5d77),
                             fontWeight: FontWeight.w700,
                             fontSize: 20.0,
                           ),
@@ -121,7 +121,7 @@ class _TablaComisionesState extends State<TablaComisiones> {
                   Text(
                     'Sobre comisión',
                     style: TextStyle(
-                      color: Color(0xff29f3e2),
+                      color: Color(0xff4c5d77),
                       fontWeight: FontWeight.w700,
                       fontSize: 20.0,
                     ),
@@ -130,7 +130,7 @@ class _TablaComisionesState extends State<TablaComisiones> {
               ),
             ),
             Divider(
-              color: Color(0xff0ce4fb),
+              color: Color(0xff9cace5),
               height: 20,
               thickness: 7.0,
               indent: 290.0,

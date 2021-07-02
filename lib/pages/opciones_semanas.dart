@@ -7,12 +7,12 @@ class OpcionesSemanas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 68, 192, 197),
+      backgroundColor: Color(0xff424549),
       body: Container(
         child: ListView(
           children: [
             Divider(
-              color: Color(0xff0ce4fb),
+              color: Color(0xff9cace5),
               height: 200,
               thickness: 7.0,
               endIndent: 290.0,
@@ -34,7 +34,7 @@ class OpcionesSemanas extends StatelessWidget {
               height: 30.0,
             ),
             BotonWidget(
-              color: Color(0xff79c662),
+              color: Color(0xff7289da),
               texto: '6 semanas',
               colorLetra: Colors.white,
             ),
@@ -46,7 +46,7 @@ class OpcionesSemanas extends StatelessWidget {
                 Navigator.pushNamed(context, "opciones_montos");
               },
               child: BotonWidget(
-                color: Color(0xff79c662),
+                color: Color(0xff7289da),
                 texto: '10 semanas',
                 colorLetra: Colors.white,
               ),
@@ -55,12 +55,12 @@ class OpcionesSemanas extends StatelessWidget {
               height: 20.0,
             ),
             BotonWidget(
-              color: Color(0xff79c662),
+              color: Color(0xff7289da),
               texto: '12 semanas',
               colorLetra: Colors.white,
             ),
             Divider(
-              color: Color(0xff0ce4fb),
+              color: Color(0xff9cace5),
               height: 200,
               thickness: 7.0,
               indent: 290.0,

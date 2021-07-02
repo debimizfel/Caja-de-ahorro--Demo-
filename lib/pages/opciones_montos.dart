@@ -12,7 +12,7 @@ class OpcionesMontos extends StatelessWidget {
         child: ListView(
           children: [
             Divider(
-              color: Color(0xff0ce4fb),
+              color: Color(0xff7289da),
               height: 200,
               thickness: 7.0,
               endIndent: 290.0,
@@ -24,7 +24,7 @@ class OpcionesMontos extends StatelessWidget {
               child: Text(
                 '¿Qué monto quisieras aportar cada semana?',
                 style: TextStyle(
-                  color: Colors.black,
+                  color: Color(0xff222941),
                   fontWeight: FontWeight.w600,
                   fontSize: 30.0,
                 ),
@@ -38,7 +38,7 @@ class OpcionesMontos extends StatelessWidget {
                 Navigator.pushNamed(context, "tabla_comisiones");
               },
               child: BotonWidget(
-                color: Color(0xff79c662),
+                color: Color(0xff424549),
                 texto: '\$500',
                 colorLetra: Colors.white,
               ),
@@ -47,20 +47,20 @@ class OpcionesMontos extends StatelessWidget {
               height: 20.0,
             ),
             BotonWidget(
-              color: Color(0xff79c662),
-              texto: '\$350',
+              color: Color(0xff424549),
+              texto: '\$300',
               colorLetra: Colors.white,
             ),
             SizedBox(
               height: 20.0,
             ),
             BotonWidget(
-              color: Color(0xff79c662),
-              texto: '\$250',
+              color: Color(0xff424549),
+              texto: '\$100',
               colorLetra: Colors.white,
             ),
             Divider(
-              color: Color(0xff0ce4fb),
+              color: Color(0xff7289da),
               height: 200,
               thickness: 7.0,
               indent: 290.0,

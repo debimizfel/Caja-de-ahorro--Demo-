@@ -6,12 +6,12 @@ class TandaLista extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xff424549),
       body: Container(
         child: ListView(
           children: [
             Divider(
-              color: Color(0xff79c662),
+              color: Color(0xff9cace5),
               height: 200,
               thickness: 7.0,
               endIndent: 290.0,
@@ -23,7 +23,7 @@ class TandaLista extends StatelessWidget {
               child: Text(
                 '¡Felicidades, ya tu Tanda está armada!',
                 style: TextStyle(
-                  color: Colors.black,
+                  color: Colors.white,
                   fontWeight: FontWeight.w800,
                   fontSize: 30.0,
                 ),
@@ -38,7 +38,7 @@ class TandaLista extends StatelessWidget {
                 child: Text(
                   'Te enviaremos un recordatorio cuando toque tu primer aporte',
                   style: TextStyle(
-                    color: Colors.black,
+                    color: Colors.white,
                     fontWeight: FontWeight.w300,
                     fontSize: 30.0,
                   ),
@@ -48,18 +48,9 @@ class TandaLista extends StatelessWidget {
             SizedBox(
               height: 20.0,
             ),
-            Center(
-              child: Image.asset(
-                'assets/img/flecha.png',
-                height: 100.0,
-              ),
-            ),
-            SizedBox(
-              height: 20.0,
-            ),
             InkWell(
               child: Container(
-                color: Color(0xff79c662),
+                color: Color(0xff9cace5),
                 height: 80.0,
                 width: Size.infinite.width,
                 child: Icon(Icons.home, size: 80.0, color: Colors.white),
@@ -67,6 +58,12 @@ class TandaLista extends StatelessWidget {
               onTap: () {
                 Navigator.pushNamed(context, "home");
               },
+            ),
+            Divider(
+              color: Color(0xff9cace5),
+              height: 200,
+              thickness: 7.0,
+              indent: 290.0,
             ),
           ],
         ),

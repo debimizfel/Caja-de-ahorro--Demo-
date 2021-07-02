@@ -34,7 +34,7 @@ class _DatosTablaState extends State<DatosTabla> {
             child: Text(
               '$nro',
               style: TextStyle(
-                color: Colors.black,
+                color: Color(0xff424549),
                 fontWeight: FontWeight.w700,
                 fontSize: 15.0,
               ),
@@ -44,7 +44,7 @@ class _DatosTablaState extends State<DatosTabla> {
           Text(
             '$tanda',
             style: TextStyle(
-              color: Colors.black,
+              color: Color(0xff424549),
               fontWeight: FontWeight.w700,
               fontSize: 15.0,
             ),
@@ -53,7 +53,7 @@ class _DatosTablaState extends State<DatosTabla> {
           Text(
             nro != 10 ? '$comision' : '${0}',
             style: TextStyle(
-              color: Colors.black,
+              color: Color(0xff424549),
               fontWeight: FontWeight.w700,
               fontSize: 20.0,
             ),
@@ -62,7 +62,7 @@ class _DatosTablaState extends State<DatosTabla> {
           Text(
             nro != 10 ? '$recibido' : '$monto',
             style: TextStyle(
-              color: Colors.black,
+              color: Color(0xff424549),
               fontWeight: FontWeight.w700,
               fontSize: 20.0,
             ),

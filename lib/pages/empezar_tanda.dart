@@ -7,12 +7,12 @@ class EmpezarTanda extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff44c0c5),
+      backgroundColor: Color(0xff424549),
       body: Container(
         child: ListView(
           children: [
             Divider(
-              color: Color(0xff0ce4fb),
+              color: Color(0xff9cace5),
               height: 150,
               thickness: 7.0,
               endIndent: 290.0,
@@ -38,7 +38,7 @@ class EmpezarTanda extends StatelessWidget {
                 Navigator.pushNamed(context, "tanda_lista");
               },
               child: BotonWidget(
-                color: Color(0xff0ce4fb),
+                color: Color(0xff9cace5),
                 texto: '¡Hoy mismo!',
                 colorLetra: Colors.white,
               ),
@@ -49,7 +49,7 @@ class EmpezarTanda extends StatelessWidget {
             BotonWidget(
               color: Colors.white,
               texto: 'Próximo viernes',
-              colorLetra: Colors.black,
+              colorLetra: Color(0xff4c5d77),
             ),
             SizedBox(
               height: 20.0,
@@ -57,10 +57,10 @@ class EmpezarTanda extends StatelessWidget {
             BotonWidget(
               color: Colors.white,
               texto: 'Próxima quincena',
-              colorLetra: Colors.black,
+              colorLetra: Color(0xff4c5d77),
             ),
             Divider(
-              color: Color(0xff0ce4fb),
+              color: Color(0xff9cace5),
               height: 200,
               thickness: 7.0,
               indent: 290.0,
