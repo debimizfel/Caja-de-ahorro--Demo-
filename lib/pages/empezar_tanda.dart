@@ -48,7 +48,7 @@ class EmpezarTanda extends StatelessWidget {
             ),
             BotonWidget(
               color: Colors.white,
-              texto: 'Próximo viernes',
+              texto: 'Próximo Domingo',
               colorLetra: Color(0xff4c5d77),
             ),
             SizedBox(
@@ -56,7 +56,7 @@ class EmpezarTanda extends StatelessWidget {
             ),
             BotonWidget(
               color: Colors.white,
-              texto: 'Próxima quincena',
+              texto: 'Próxima Mes',
               colorLetra: Color(0xff4c5d77),
             ),
             Divider(

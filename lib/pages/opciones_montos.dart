@@ -38,7 +38,7 @@ class OpcionesMontos extends StatelessWidget {
                 Navigator.pushNamed(context, "tabla_comisiones");
               },
               child: BotonWidget(
-                color: Color(0xff424549),
+                color: Color(0xff7a7c7f),
                 texto: '\$500',
                 colorLetra: Colors.white,
               ),
@@ -47,7 +47,7 @@ class OpcionesMontos extends StatelessWidget {
               height: 20.0,
             ),
             BotonWidget(
-              color: Color(0xff424549),
+              color: Color(0xff7a7c7f),
               texto: '\$300',
               colorLetra: Colors.white,
             ),
@@ -55,7 +55,7 @@ class OpcionesMontos extends StatelessWidget {
               height: 20.0,
             ),
             BotonWidget(
-              color: Color(0xff424549),
+              color: Color(0xff7a7c7f),
               texto: '\$100',
               colorLetra: Colors.white,
             ),

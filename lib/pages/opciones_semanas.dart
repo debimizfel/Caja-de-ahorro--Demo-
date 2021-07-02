@@ -35,7 +35,7 @@ class OpcionesSemanas extends StatelessWidget {
             ),
             BotonWidget(
               color: Color(0xff7289da),
-              texto: '6 semanas',
+              texto: '5 semanas',
               colorLetra: Colors.white,
             ),
             SizedBox(
@@ -56,7 +56,7 @@ class OpcionesSemanas extends StatelessWidget {
             ),
             BotonWidget(
               color: Color(0xff7289da),
-              texto: '12 semanas',
+              texto: '15 semanas',
               colorLetra: Colors.white,
             ),
             Divider(

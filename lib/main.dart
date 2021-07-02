@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Caja de ahorros',
-      initialRoute: "tanda_lista",
+      initialRoute: "home",
       routes: {
         "home": (BuildContext context) => Screen1(),
         "opciones_semanales": (BuildContext context) => OpcionesSemanas(),
