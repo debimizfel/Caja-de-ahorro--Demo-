@@ -49,17 +49,6 @@ class ColorPalet extends StatelessWidget {
                 width: 200,
               ),
             ),
-            InkWell(
-              child: Container(
-                color: Color(0xff222941),
-                height: 80.0,
-                width: Size.infinite.width,
-                child: Icon(Icons.home, size: 80.0, color: Colors.white),
-              ),
-              onTap: () {
-                Navigator.pushNamed(context, "tabla_comisiones");
-              },
-            ),
           ],
         ),
       ),
