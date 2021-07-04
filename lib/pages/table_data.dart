@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class DatosTabla extends StatefulWidget {
-  const DatosTabla({Key? key}) : super(key: key);
+class TableData extends StatefulWidget {
+  const TableData({Key? key}) : super(key: key);
 
   @override
-  _DatosTablaState createState() => _DatosTablaState();
+  _TableDataState createState() => _TableDataState();
 }
 
-class _DatosTablaState extends State<DatosTabla> {
+class _TableDataState extends State<TableData> {
   int comision = 990, recibido = 3510, monto = 4500;
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class _DatosTablaState extends State<DatosTabla> {
   datos(int nro, int tanda, int comision, int recibido) {
     return InkWell(
       onTap: () {
-        Navigator.pushNamed(context, "empezar_tanda");
+        Navigator.pushNamed(context, "start_batch");
       },
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,

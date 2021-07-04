@@ -1,16 +1,17 @@
 //MANDAR
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/datos_tabla.dart';
+import 'package:flutter_application_1/pages/table_data.dart';
+import 'package:flutter_application_1/widgets/column_title_widget.dart';
 
-class TablaComisiones extends StatefulWidget {
-  const TablaComisiones({Key? key}) : super(key: key);
+class CommissionTable extends StatefulWidget {
+  const CommissionTable({Key? key}) : super(key: key);
 
   @override
-  _TablaComisionesState createState() => _TablaComisionesState();
+  _CommissionTableState createState() => _CommissionTableState();
 }
 
-class _TablaComisionesState extends State<TablaComisiones> {
+class _CommissionTableState extends State<CommissionTable> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,49 +40,7 @@ class _TablaComisionesState extends State<TablaComisiones> {
             SizedBox(
               height: 25.0,
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Text(
-                    'Nro',
-                    style: TextStyle(
-                      color: Color(0xff424549),
-                      fontWeight: FontWeight.w700,
-                      fontSize: 15.0,
-                    ),
-                  ),
-                  SizedBox(width: 5.0),
-                  Text(
-                    'Tanda Semanal',
-                    style: TextStyle(
-                      color: Color(0xff424549),
-                      fontWeight: FontWeight.w700,
-                      fontSize: 15.0,
-                    ),
-                  ),
-                  SizedBox(width: 5.0),
-                  Text(
-                    'Comisión',
-                    style: TextStyle(
-                      color: Color(0xff424549),
-                      fontWeight: FontWeight.w700,
-                      fontSize: 15.0,
-                    ),
-                  ),
-                  SizedBox(width: 5.0),
-                  Text(
-                    'Monto que recibes',
-                    style: TextStyle(
-                      color: Color(0xff424549),
-                      fontWeight: FontWeight.w700,
-                      fontSize: 15.0,
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            ColumnTitle(),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: Divider(
@@ -89,14 +48,14 @@ class _TablaComisionesState extends State<TablaComisiones> {
                 thickness: 2.0,
               ),
             ),
-            DatosTabla(),
+            TableData(),
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: Row(
                 children: [
                   InkWell(
                     onTap: () {
-                      Navigator.pushNamed(context, "opciones_montos");
+                      Navigator.pushNamed(context, "amounts");
                     },
                     child: Row(
                       children: [

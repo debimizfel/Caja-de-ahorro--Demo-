@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/widgets/boton_widget.dart';
 
-class Screen1 extends StatefulWidget {
-  const Screen1({Key? key}) : super(key: key);
+class Weeks extends StatelessWidget {
+  const Weeks({Key? key}) : super(key: key);
 
-  @override
-  _Screen1State createState() => _Screen1State();
-}
-
-class _Screen1State extends State<Screen1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +22,7 @@ class _Screen1State extends State<Screen1> {
                 horizontal: 50.0,
               ),
               child: Text(
-                '¿Cada cuánto quieres aportar a tu tanda?',
+                '¿De cuántas semanas quieres hacer tu tanda?',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.w600,
@@ -38,13 +33,21 @@ class _Screen1State extends State<Screen1> {
             SizedBox(
               height: 30.0,
             ),
+            BotonWidget(
+              color: Color(0xff7289da),
+              texto: '5 semanas',
+              colorLetra: Colors.white,
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
             InkWell(
               onTap: () {
-                Navigator.pushNamed(context, "opciones_semanales");
+                Navigator.pushNamed(context, "amounts");
               },
               child: BotonWidget(
                 color: Color(0xff7289da),
-                texto: 'Semanal',
+                texto: '10 semanas',
                 colorLetra: Colors.white,
               ),
             ),
@@ -53,7 +56,7 @@ class _Screen1State extends State<Screen1> {
             ),
             BotonWidget(
               color: Color(0xff7289da),
-              texto: 'Mensual',
+              texto: '15 semanas',
               colorLetra: Colors.white,
             ),
             Divider(

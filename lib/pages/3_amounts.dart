@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/widgets/boton_widget.dart';
 
-class OpcionesSemanas extends StatelessWidget {
-  //const Screen1({ Key? key }) : super(key: key);
+class Amounts extends StatelessWidget {
+  const Amounts({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff424549),
+      backgroundColor: Colors.white,
       body: Container(
         child: ListView(
           children: [
             Divider(
-              color: Color(0xff9cace5),
+              color: Color(0xff7289da),
               height: 200,
               thickness: 7.0,
               endIndent: 290.0,
@@ -22,32 +22,24 @@ class OpcionesSemanas extends StatelessWidget {
                 horizontal: 50.0,
               ),
               child: Text(
-                '¿De cuántas semanas quieres hacer tu tanda?',
+                '¿Qué monto quisieras aportar cada semana?',
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Color(0xff222941),
                   fontWeight: FontWeight.w600,
-                  fontSize: 40.0,
+                  fontSize: 30.0,
                 ),
               ),
             ),
             SizedBox(
               height: 30.0,
             ),
-            BotonWidget(
-              color: Color(0xff7289da),
-              texto: '5 semanas',
-              colorLetra: Colors.white,
-            ),
-            SizedBox(
-              height: 20.0,
-            ),
             InkWell(
               onTap: () {
-                Navigator.pushNamed(context, "opciones_montos");
+                Navigator.pushNamed(context, "commission_table");
               },
               child: BotonWidget(
-                color: Color(0xff7289da),
-                texto: '10 semanas',
+                color: Color(0xff7a7c7f),
+                texto: '\$500',
                 colorLetra: Colors.white,
               ),
             ),
@@ -55,12 +47,20 @@ class OpcionesSemanas extends StatelessWidget {
               height: 20.0,
             ),
             BotonWidget(
-              color: Color(0xff7289da),
-              texto: '15 semanas',
+              color: Color(0xff7a7c7f),
+              texto: '\$300',
+              colorLetra: Colors.white,
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            BotonWidget(
+              color: Color(0xff7a7c7f),
+              texto: '\$100',
               colorLetra: Colors.white,
             ),
             Divider(
-              color: Color(0xff9cace5),
+              color: Color(0xff7289da),
               height: 200,
               thickness: 7.0,
               indent: 290.0,

@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/widgets/boton_widget.dart';
 
-class EmpezarTanda extends StatelessWidget {
-  //const Screen1({ Key? key }) : super(key: key);
+class CadaCuanto extends StatefulWidget {
+  const CadaCuanto({Key? key}) : super(key: key);
 
+  @override
+  _CadaCuantoState createState() => _CadaCuantoState();
+}
+
+class _CadaCuantoState extends State<CadaCuanto> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,7 +18,7 @@ class EmpezarTanda extends StatelessWidget {
           children: [
             Divider(
               color: Color(0xff9cace5),
-              height: 150,
+              height: 200,
               thickness: 7.0,
               endIndent: 290.0,
             ),
@@ -22,10 +27,10 @@ class EmpezarTanda extends StatelessWidget {
                 horizontal: 50.0,
               ),
               child: Text(
-                '¿Cuándo empiezas tu tanda?',
+                '¿Cada cuánto quieres aportar a tu tanda?',
                 style: TextStyle(
                   color: Colors.white,
-                  fontWeight: FontWeight.w800,
+                  fontWeight: FontWeight.w600,
                   fontSize: 40.0,
                 ),
               ),
@@ -35,11 +40,11 @@ class EmpezarTanda extends StatelessWidget {
             ),
             InkWell(
               onTap: () {
-                Navigator.pushNamed(context, "tanda_lista");
+                Navigator.pushNamed(context, "weeks");
               },
               child: BotonWidget(
-                color: Color(0xff9cace5),
-                texto: '¡Hoy mismo!',
+                color: Color(0xff7289da),
+                texto: 'Semanal',
                 colorLetra: Colors.white,
               ),
             ),
@@ -47,17 +52,9 @@ class EmpezarTanda extends StatelessWidget {
               height: 20.0,
             ),
             BotonWidget(
-              color: Colors.white,
-              texto: 'Próximo Domingo',
-              colorLetra: Color(0xff4c5d77),
-            ),
-            SizedBox(
-              height: 20.0,
-            ),
-            BotonWidget(
-              color: Colors.white,
-              texto: 'Próxima Mes',
-              colorLetra: Color(0xff4c5d77),
+              color: Color(0xff7289da),
+              texto: 'Mensual',
+              colorLetra: Colors.white,
             ),
             Divider(
               color: Color(0xff9cace5),
